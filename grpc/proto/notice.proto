@@ -1,0 +1,18 @@
+syntax = "proto3";  //语法声明
+
+package grpc; //包名
+
+service NoticeService {
+    rpc FilterInsert(FilterInsertRequest) returns(FilterInsertReply){}
+}
+message FilterInsertRequest{
+    repeated Notice notices = 1;
+}
+message FilterInsertReply{
+    int32 code = 1;
+}
+message Notice{
+    string title = 1;
+    string CreateTime = 2;
+    string JumpUrl = 3;
+}
