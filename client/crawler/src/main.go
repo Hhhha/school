@@ -6,11 +6,15 @@ import (
 	"crawler/client/crawler/src/log"
 	"crawler/client/crawler/src/notice"
 	"github.com/PuerkitoBio/goquery"
+	"time"
 )
 
 func main() {
 	// protoc *.proto --go_out=plugins=grpc:../server
-	run()
+	for {
+		time.Sleep(time.Second * 10)
+		go run()
+	}
 }
 
 func run() {

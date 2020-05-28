@@ -8,7 +8,6 @@ import (
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"time"
 )
 
 const addr = "mongodb://47.97.90.202:27017"
@@ -21,7 +20,7 @@ func init() {
 	if e != nil {
 		log.Logger.Error(e)
 	}
-	Ctx, _ = context.WithTimeout(context.Background(), time.Second*20)
+	Ctx = context.Background()
 	e = client.Connect(Ctx)
 	if e != nil {
 		log.Logger.Error(e)

@@ -22,10 +22,12 @@ func (receiver *NoticeServer) FilterInsert(ctx context.Context, in *server.Filte
 		}
 		notices = append(notices, value)
 	}
-	result, e := mongo.Insert(notices)
-	if e != nil {
-		panic(e)
+	if len(notices) != 0 {
+		result, e := mongo.Insert(notices)
+		if e != nil {
+			panic(e)
+		}
+		log.Logger.Info("mongoId:", result.InsertedIDs)
 	}
-	log.Logger.Info("mongoId:", result.InsertedIDs)
 	return &server.FilterInsertReply{}, nil
 }
