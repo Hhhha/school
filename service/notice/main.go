@@ -1,7 +1,7 @@
 package main
 
 import (
-	"crawler/client/crawler/src/log"
+	"crawler/client/crawler/log"
 	server "crawler/grpc/server"
 	"crawler/service/notice/config"
 	notice "crawler/service/notice/service"

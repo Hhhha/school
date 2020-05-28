@@ -1,7 +1,7 @@
 package notice
 
 import (
-	"crawler/client/crawler/src/log"
+	"crawler/client/crawler/log"
 	grpc "crawler/grpc/server"
 	"github.com/PuerkitoBio/goquery"
 )

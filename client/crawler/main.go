@@ -1,10 +1,10 @@
-package main
+package crawler
 
 import (
-	"crawler/client/crawler/src/client"
-	"crawler/client/crawler/src/curl"
-	"crawler/client/crawler/src/log"
-	"crawler/client/crawler/src/notice"
+	"crawler/client/crawler/client"
+	"crawler/client/crawler/curl"
+	"crawler/client/crawler/log"
+	"crawler/client/crawler/notice"
 	"github.com/PuerkitoBio/goquery"
 	"time"
 )

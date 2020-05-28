@@ -2,7 +2,7 @@ package client
 
 import (
 	"context"
-	"crawler/client/crawler/src/log"
+	"crawler/client/crawler/log"
 	grpc2 "crawler/grpc/server"
 	"crawler/service/notice/config"
 	"google.golang.org/grpc"

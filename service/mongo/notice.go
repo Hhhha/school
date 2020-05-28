@@ -2,7 +2,7 @@ package mongo
 
 import (
 	"context"
-	"crawler/client/crawler/src/log"
+	"crawler/client/crawler/log"
 	grpc "crawler/grpc/server"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"

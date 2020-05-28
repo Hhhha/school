@@ -1,8 +1,8 @@
 package document
 
 import (
-	"crawler/client/crawler/src/curl"
-	"crawler/client/crawler/src/log"
+	"crawler/client/crawler/curl"
+	"crawler/client/crawler/log"
 	"github.com/ddliu/go-httpclient"
 )
 

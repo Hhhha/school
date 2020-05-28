@@ -2,7 +2,7 @@ package noticeService
 
 import (
 	"context"
-	"crawler/client/crawler/src/log"
+	"crawler/client/crawler/log"
 	server "crawler/grpc/server"
 	"crawler/service/mongo"
 )
